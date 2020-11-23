@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Ex 4</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      span {
+        width: 20px;
+      }
+
+      .red {
+        height: 80px;
+        width: 80px;
+        background-color: red;
+        position: absolute;
+        top: 300px;
+        left: 700px;
+      }
+
+      .yellow {
+        height: 80px;
+        width: 80px;
+        background-color: yellow;
+        position: absolute;
+        top: 600px;
+        left: 750px;
+      }
+
+      .blue {
+        height: 80px;
+        width: 80px;
+        background-color: blue;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+      }
+
+      .green {
+        height: 80px;
+        width: 80px;
+        background-color: green;
+        position: absolute;
+        top: 500px;
+        left: 350px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="baralhar()" class="btn btn-primary my-5">
+        Baralhar
+      </button>
+    </br>
+      <span
+        >Olá eu sou o
+        <p id="displayCor"></p
+      ></span>
+      <span
+        >top:
+        <p  id="top"></p
+      ></span>
+      <span
+        >left:
+        <p id="left"></p
+      ></span>
+
+      <div onmouseover="infoRed()" onmouseout="infoApaga()" id="red" class="red"></div>
+      <div onmouseover="infoBlue()" onmouseout="infoApaga()" id="blue" class="blue"></div>
+      <div onmouseover="infoYellow()" onmouseout="infoApaga()" id="yellow" class="yellow"></div>
+      <div onmouseover="infoGreen()" onmouseout="infoApaga()" id="green" class="green"></div>
+    </div>
+    <!-- Fim da página, scripts de suporte ao Bootstrap -->
+    <script type="text/javascript" src="ex4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

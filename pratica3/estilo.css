@@ -1,0 +1,114 @@
+.menutop a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.menutop ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menutop li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+.menutop li:last-child {
+  border-right: none;
+  float: right;
+}
+
+.menutop li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menutop li a:hover:not(.active) {
+  background-color: #444;
+}
+
+.menutop li a.active:hover {
+  color: #444;
+}
+
+body {
+  margin: 0px;
+  font-family: "open sans";
+}
+
+.menutop .active {
+  background-color: #5caf50;
+}
+
+.menutop {
+  background-color: grey;
+  width: 960px;
+  height: 50px;
+  margin: auto;
+}
+
+.banner {
+  height: 200px;
+  background-color: white;
+  min-height: 480px;
+  border: solid;
+  border-color: black;
+  background-image: url("The_the_Avengers_2012_HD_Wallpapers_medium.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.lowerdiv {
+  width: 960px;
+  background-color: red;
+  min-height: 480px;
+  display: flex;
+  margin: auto;
+}
+
+.content {
+  width: 720px;
+  background-color: yellowgreen;
+}
+
+.ad {
+  width: 240px;
+  background-color: brown;
+}
+
+.footer {
+  height: 30px;
+  width: 960px;
+  margin: auto;
+  border-top: solid;
+  border-color: #bbb;
+}
+
+.buttonmenu {
+  width: 80px;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid;
+  border-left: solid;
+  border-color: antiquewhite;
+}
+
+.buttonmenu:hover {
+  background-color: green;
+}
+
+.texto {
+  width: 960px;
+  margin: auto;
+}

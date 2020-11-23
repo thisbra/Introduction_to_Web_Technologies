@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      textarea {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      label {
+        font-size: larger;
+      }
+
+      fieldset {
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+      }
+
+      .inputi {
+        margin-top: 20px;
+      }
+
+      .barradir {
+        float: right;
+        margin-right: 0%;
+        width: 86%;
+        height: 24px;
+        font-size: medium;
+      }
+
+      .barraselect {
+        float: right;
+        margin-right: 0%;
+        width: 86.7%;
+        height: 30px;
+        font-size: medium;
+      }
+
+      .checkers {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Informação Pessoal</h1>
+    <form
+      name="PersonData"
+      action="http://192.168.160.36/FormEcho.aspx"
+      method="post"
+    >
+      <fieldset>
+        <input type="hidden" name="FormName" value="UserForm" />
+        <legend>Informações Pessoais</legend>
+        <div class="inputi">
+          <label for="curso">Curso:</label>
+          <select class="barraselect" name="curso" id="curso">
+            <option value="1">Engenharia informática</option>
+            <option value="2">Biomedicina</option>
+            <option value="3">ECT</option>
+            <option value="4">Outro</option>
+          </select>
+        </div>
+        <div class="inputi">
+          <label for="name">Nome:</label>
+          <input
+            class="barradir"
+            type="text"
+            name="FirstName"
+            value="Joaquim"
+            placeholder="Nome"
+            id="name"
+          />
+        </div>
+        <div class="inputi">
+          <label for="lastname">Sobrenome</label>
+          <input
+            type="text"
+            id="lastname"
+            name="LastName"
+            placeholder="Sobrenome"
+            class="barradir"
+          />
+        </div>
+        <div class="inputi">
+          <label for="pass">Palavra-Passe:</label>
+          <input
+            id="pass"
+            class="barradir"
+            type="password"
+            name="Password"
+            placeholder="Digite a palavra passe"
+          />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Comentários:</legend>
+        <textarea
+          name="Comments"
+          rows="4"
+          cols="80"
+          placeholder="Insira os seus comentários"
+        ></textarea>
+      </fieldset>
+      <div class="checkers">
+        <fieldset style="width: 50%">
+          <legend>Meios de Transporte:</legend>
+          <input
+            type="radio"
+            id="bicicleta"
+            name="transporte"
+            value="bicicleta"
+          />
+          <label for="male">Bicicleta</label><br />
+          <input type="radio" id="carro" name="transporte" value="carro" />
+          <label for="carro">Carro</label><br />
+          <input type="radio" id="comboio" name="transporte" value="comboio" />
+          <label for="comboio">Comboio</label>
+        </fieldset>
+        <fieldset style="width: 50%">
+          <legend>Cor Preferida:</legend>
+          <input type="checkbox" id="azul" name="azul" value="azul" />
+          <label for="azul"> Azul</label><br />
+          <input type="checkbox" id="verde" name="verde" value="verde" />
+          <label for="verde"> Verde</label><br />
+          <input type="checkbox" id="vermelho" name="vermelho" value="Boat" />
+          <label for="vermelho"> Vermelho</label>
+          <input type="checkbox" id="outra" name="outra" value="outra" />
+          <label for="outra"> Outra</label>
+        </fieldset>
+      </div>
+      <hr />
+      <div style="margin-left: auto">
+        <input name="Button" type="Submit" /><input
+          type="reset"
+          name="resetBtn"
+          value="Reset"
+        />
+      </div>
+    </form>
+  </body>
+</html>
